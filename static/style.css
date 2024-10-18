@@ -1,0 +1,82 @@
+h1{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: orangered;
+    margin-left:520px;
+    margin-top: 70px;
+    text-transform:uppercase;
+}
+h2{
+    margin-left: 570px;
+    color:black;
+
+}
+body{
+    background-color:whitesmoke;
+}
+.log_in{
+    background: linear-gradient(white,whitesmoke);
+    height: 200px;
+    width: 400px;
+    background-color: olivedrab;
+    margin-top: 100px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    border: 1px red solid;
+    border-radius: 5px;
+}
+input{
+    height: 30px;
+    width: 300px;
+    color: blueviolet;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 50px;
+    border: 2px green solid;
+    border-radius: 5px;
+
+}
+button{
+    height: 30px;
+    width: 100px;
+    margin-left: 90px;
+    color: green;
+    font-weight: bolder;
+    font-size: large;
+    background-color:lightcyan;
+    border-radius: 5px;
+}
+button:hover{
+    color: red;
+    background-color: whitesmoke;
+}
+.task{
+    border: 3px gold solid;
+    border-radius: 5px;
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    align-content: center;
+    padding-left: 50px;
+    background-color:lightpink;
+    text-transform: uppercase;
+}
+.task_div{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+form{
+    position: sticky;
+}
+a{  
+ text-decoration: none; 
+}
+a:hover{
+    color: brown;
+}
