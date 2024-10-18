@@ -1,0 +1,45 @@
+<!-- todo/templates/todo/task_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>{{ user.username }}'s To-Do List</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+    <h1>{{ user.username }}'s To-Do List</h1>
+    <br>
+
+    <!-- Task List -->
+     <!-- Add a New Task -->
+    <h2>Add a new task</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="task_title" placeholder="Task title" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <br>
+    <br>
+    <ol type="I">
+        <div class="task_div">
+            {% for task in tasks %}
+            <div class="task">
+                <li>
+                    {{ task.title }}
+                    <br>
+                    <br>
+                    {{ task.date}}
+                    <br>
+            
+                    {{ task.time }}
+                    <br>
+
+                    <center><a href="{% url 'delete_task' task.id user.id %}">Delete/completed</a></center>
+                </li>
+            </div>
+        {% endfor %}
+        </div>
+    </ol>
+
+</body>
+</html>
